@@ -1,0 +1,24 @@
+ciphertrust:
+  host: "https://your-ciphertrust-manager.domain.com"
+  username: "${CT_USERNAME}"
+  password: "${CT_PASSWORD}"
+  domain: "root"
+  verify_ssl: true
+
+rotation:
+  default_interval_days: 90
+  algorithms:
+    - AES-256
+    - RSA-2048
+    - RSA-4096
+  notify_before_days: 14
+
+reporting:
+  output_dir: "./reports"
+  format: "pdf"
+  include_hash: true
+  sign_reports: false
+
+logging:
+  level: INFO
+  retain_days: 365

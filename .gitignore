@@ -1,0 +1,22 @@
+# Secrets
+config/config.yaml
+*.env
+.env
+
+# Logs
+logs/*.log
+logs/*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Reports (generated)
+reports/*.pdf
+reports/*.json
